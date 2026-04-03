@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Chess</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Include chess.js for game logic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Grandmaster Play</h1>
+      <p class="status-text" id="status-text">White to move</p>
+    </header>
+
+    <main class="game-area">
+      <div class="board-wrapper">
+        <div id="board" class="board">
+          <div id="squares" class="squares"></div>
+          <div id="pieces" class="pieces"></div>
+          <div id="highlights" class="highlights"></div>
+        </div>
+      </div>
+      
+      <aside class="sidebar">
+        <div class="info-panel">
+          <h2>Game History</h2>
+          <div class="history-list" id="history-list"></div>
+        </div>
+        <div class="controls">
+          <button id="btn-reset" class="btn primary-btn">New Game</button>
+          <button id="btn-undo" class="btn secondary-btn">Undo Move</button>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
